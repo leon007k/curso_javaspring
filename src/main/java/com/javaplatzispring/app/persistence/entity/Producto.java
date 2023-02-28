@@ -1,7 +1,5 @@
 package com.javaplatzispring.app.persistence.entity;
 
-import javax.money.MonetaryAmount;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -36,7 +34,7 @@ public class Producto {
 	private String codigoBarras;
 	
 	@Column(name = "precio_venta")
-	private MonetaryAmount precioVenta;
+	private int precioVenta;
 	
 	@Column(name = "cantidad_stock")
 	private Integer cantidadStock;

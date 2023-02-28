@@ -1,6 +1,6 @@
 package com.javaplatzispring.app.persistence.entity;
 
-import javax.money.MonetaryAmount;
+
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
@@ -18,7 +18,7 @@ public class CompraProducto {
 	
 	private Long cantidad;
 	
-	private MonetaryAmount total;
+	private int total;
 	
 	private Boolean estado;
 	

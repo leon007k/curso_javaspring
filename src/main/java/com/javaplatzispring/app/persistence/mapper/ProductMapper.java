@@ -9,6 +9,7 @@ import org.mapstruct.Mapping;
 import com.javaplatzispring.app.domain.domain.Product;
 import com.javaplatzispring.app.persistence.entity.Producto;
 
+
 /*
  * Con uses, indicamos que debera hacer uso de la clase que contiene el otro mapper
  * debido a que la clase producto tiene un join con la clase categoria
@@ -29,5 +30,5 @@ public interface ProductMapper {
 	
 	@InheritInverseConfiguration
 	@Mapping(target = "codigoBarras", ignore = true)
-	Producto toProduct(Product product);
+	Producto toProducto(Product product);
 }
